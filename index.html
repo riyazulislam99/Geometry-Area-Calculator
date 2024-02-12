@@ -19,12 +19,13 @@
             <!-- shape card container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <figure><img src="images/triangle.png" alt="" /></figure>
                     <div class="card-body text-center">
                         <h2 class="font-semibold text-2xl">Triangle</h2>
                         <p class="font-medium">Area(A) = 0.5 x b x h</p>
                         <div>
-                            <input id="triangle-base" class="w-24 text-2xl p-2 rounded-md bg-gray-200" type="text" placeholder="base">
+                            <input id="triangle-base" class="w-24 text-2xl p-2 rounded-md bg-gray-200" type="text"
+                                placeholder="base">
                             <span class="mr-4 ml-2">cm</span>
                             <input id="triangle-height" class="w-24 text-2xl p-2 rounded-md bg-gray-200" type="text"
                                 placeholder="height">
@@ -38,6 +39,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="" /></figure>
+                    <div class="card-body text-center">
+                        <h2 class="font-semibold text-2xl">Rectangle</h2>
+                        <p class="font-medium">Area (A) = w x l</p>
+                        <div>
+                            <input id="rectangle-width" class="w-24 text-2xl p-2 rounded-md bg-gray-200" type="text"
+                                placeholder="width">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input id="rectangle-length" class="w-24 text-2xl p-2 rounded-md bg-gray-200" type="text"
+                                placeholder="lenght">
+                            <span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl">Area: <span id="rectangle-area"> </span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions">
+                            <button onclick="calculateRectangleArea()" class="w-full btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
@@ -46,6 +68,7 @@
         </div>
     </main>
     <script src="script/triangle.js"></script>
+    <script src="script/rectangle.js"></script>
 </body>
 
 </html>
